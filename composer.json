@@ -1,7 +1,7 @@
 {
     "name": "msm/ci-actions-msm",
     "require-dev": {
-        "phpunit/phpunit": "^10"
+        "phpunit/phpunit": "^9.6"
     },
     "autoload": {
         "psr-4": {

@@ -23,14 +23,14 @@ jobs:
           php-version: ${{ matrix.php-version }}
 
       - name: Instal·lar dependències
-        run: composer install
+        run: composer update --no-interaction --prefer-dist
 
       - name: Executar tests amb informe JUnit
-        run: ./vendor/bin/phpunit --log-junit resultats.xml
+        run: ./vendor/bin/phpunit --log-junit resultats-${{ matrix.php-version }}.xml
 
       - name: Pujar artefacte
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: resultats-MSM
-          path: resultats.xml
+          name: resultats-MSM-php-${{ matrix.php-version }}
+          path: resultats-${{ matrix.php-version }}.xml

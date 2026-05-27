@@ -1,0 +1,13 @@
+{
+    "name": "smoke/test-project",
+    "description": "PHP and Composer smoke test",
+    "require": {
+        "php": "^8.4"
+    },
+    "authors": [
+        {
+            "name": "pelirrojooooo",
+            "email": "cramsalom@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+name: Hola Actions MSM
+
+on:
+  workflow_dispatch:
+
+jobs:
+  saludar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Missatge
+        run: echo "Hola, GitHub Actions! Soc MSM"
